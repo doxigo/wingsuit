@@ -4,42 +4,32 @@ form_input:
   label: Input
   description: Input forms styled with Tailwind custom forms. Checkout https://tailwindcss-custom-forms.netlify.app/ for more infos.
   variants:
-    textfield:
+    text:
       label: Textfield
       settings:
-        attributes: "type=\"text\" placeholder=\"Placeholder\""
+        attributes: placeholder=\"Placeholder\""
     password:
       label: Password
       settings:
-        attributes: "type=\"password\" placeholder=\"Password\""
+        attributes: placeholder=\"Password\""
     submit:
       label: Submit
       settings:
-        attributes: "type=\"text\" placeholder=\"Placeholder\""
+        attributes: placeholder=\"Placeholder\""
     email:
       label: Email
       settings:
-        attributes: "type=\"email\" placeholder=\"Email\""
+        attributes: placeholder=\"Email\""
     file:
       label: File
-      settings:
-        attributes: "type=\"file\""
     tel:
       label: Tel
-      settings:
-        attributes: "type=\"tel\""
     date:
       label: Date
-      settings:
-        attributes: "type=\"date\""
     checkbox:
       label: Checkbox
-      settings:
-        attributes: "type=\"checkbox\""
     radio:
       label: Radio
-      settings:
-        attributes: "type=\"radio\""
   settings:
     attributes:
       type: attributes

@@ -23,7 +23,11 @@
   variant == 'submit' ? 'bg-primary text-white hover:bg-pink-600 px-2 py-1'
 ] | sort | join(' ') | trim )%}
 
-{% set attributes = attributes|default(create_attribute()).addClass(classes) %}
+{% if attributes is empty %}
+  {% set attributes = create_attribute() %}
+{% endif %}
+
+{% set attributes = attributes.addClass(classes).setAttribute('type', variant) %}
 
 {# TEMPLATES #}
 <input {{ attributes }} />{{ children }}
